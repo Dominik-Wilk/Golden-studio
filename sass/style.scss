@@ -2,6 +2,9 @@
 
 $colorgold: rgb(254, 209, 54);
 $colormain: #fff;
+$colorgray: #bbb;
+
+$subtitlefont: 'Unna', serif;
 $cursivefont: 'Great Vibes', cursive;
 $standardfont: 'Montserrat', sans-serif;
 // GLOBAL
@@ -28,6 +31,10 @@ body {
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
+}
+
+section {
+	padding: 96px 0;
 }
 
 // NAVIGATION
@@ -108,6 +115,61 @@ body {
 			font-weight: bold;
 			font-size: 25px;
 			cursor: pointer;
+		}
+	}
+}
+
+// SERVICES
+
+.services {
+	display: flex;
+	flex-direction: column;
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&--title {
+			text-transform: uppercase;
+			font-size: 48px;
+		}
+
+		&--subtitle {
+			color: $colorgray;
+			font-family: $subtitlefont;
+			padding-bottom: 54px;
+		}
+	}
+
+	&__boxes {
+		display: flex;
+
+		&-item {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			padding: 20px 60px;
+
+			&-icon {
+				position: relative;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 100px;
+				height: 100px;
+				font-size: 54px;
+				color: $colorgold;
+				border: 3px solid $colorgold;
+				border-radius: 50%;
+			}
+
+			&-title {
+				padding: 20px 0;
+				font-weight: bold;
+			}
+
+			&-description {
+				color: $colorgray;
+			}
 		}
 	}
 }
