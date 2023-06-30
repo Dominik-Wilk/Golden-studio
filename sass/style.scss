@@ -7,6 +7,7 @@ $colorgray: #bbb;
 $subtitlefont: 'Unna', serif;
 $cursivefont: 'Great Vibes', cursive;
 $standardfont: 'Montserrat', sans-serif;
+
 // GLOBAL
 
 *,
@@ -219,6 +220,57 @@ section {
 				&--subtitle {
 					font-family: $subtitlefont;
 					color: darken($colorgray, 15);
+				}
+			}
+		}
+	}
+}
+
+// FOOTER
+
+.footer {
+	padding: 30px 0;
+
+	&__details {
+		position: relative;
+		width: 100%;
+
+		&--copyright {
+			max-width: 35%;
+		}
+
+		&--icons {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+
+			&-list {
+				display: flex;
+				width: 100%;
+				justify-content: center;
+				list-style: none;
+				padding: 0;
+
+				&-point {
+					position: relative;
+					width: 50px;
+					height: 50px;
+					background-color: #000;
+					border-radius: 50%;
+					cursor: pointer;
+
+					&:not(:last-of-type) {
+						margin-right: 20px;
+					}
+				}
+				a {
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					color: $colormain;
+					text-align: center;
 				}
 			}
 		}
