@@ -50,12 +50,12 @@ section {
 	align-items: center;
 }
 
-[class*='info--title'] {
+[class*='info-title'] {
 	text-transform: uppercase;
 	font-size: 48px;
 }
 
-[class*='info--subtitle'] {
+[class*='info-subtitle'] {
 	color: $colorgray;
 	font-family: $subtitlefont;
 	padding-bottom: 54px;
@@ -118,18 +118,18 @@ section {
 		color: $colormain;
 		text-shadow: 0 0 3px black;
 
-		&--sub-title {
+		&-sub-title {
 			font-weight: 400;
 			font-size: 45px;
 		}
 
-		&--title {
+		&-title {
 			text-transform: uppercase;
 			font-size: 96px;
 			margin: 40px 0;
 		}
 
-		&--btn {
+		&-btn {
 			padding: 30px 80px;
 			border-radius: 5px;
 			border: none;
@@ -235,11 +235,11 @@ section {
 		position: relative;
 		width: 100%;
 
-		&--copyright {
+		&-copyright {
 			max-width: 35%;
 		}
 
-		&--icons {
+		&-icons {
 			position: absolute;
 			left: 50%;
 			top: 50%;
@@ -271,6 +271,11 @@ section {
 					transform: translate(-50%, -50%);
 					color: $colormain;
 					text-align: center;
+					font-size: 0;
+
+					i {
+						font-size: 20px;
+					}
 				}
 			}
 		}
